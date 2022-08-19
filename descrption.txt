@@ -1,0 +1,40 @@
+Pathfinder algorithms are the coolest things around, 
+how does google maps determine how to bring you from Orchard to Tampines?
+Through algorithms such as Astar or djikstra
+In short, these are algorithms to find out, what is the 
+shortest path between two destinations or nodes.
+
+I created a pathfinder algorithm visualizer 
+using javascript and css and the react library.
+
+Firstly a grid was created, and then your start and 
+finish node.
+[Technical]
+The djikstra algorithm finds the nearets unvisited node 
+with the lowest distance, 
+calculates the distance through it 
+to each unvisited neighbour of that respective node
+and updates the neighbour's distance if smaller.
+
+It keeps repeating moving to the next node until it 
+figures out what is 
+the shortest path to get to your destination.
+
+Effectively, finding out the shortest path from one node
+to every other node.
+
+[Simple]
+In other words, it goes through every node surronding your
+start node, and the nodes surrounding that, until it 
+hits your finish node, by then it'll have the shortest
+possible path between your start and finish
+
+The Astar algorithm works by utilising the 
+manhattan distance, it moves towards the finish node
+because it guesses how close the finish node with
+the manhattan distance, and as a result, can get to the 
+destination faster than the djikstra algorithm
+
+I feel like this project brought me a better
+understanding of javascript, algorithms and how to 
+visualise them.
